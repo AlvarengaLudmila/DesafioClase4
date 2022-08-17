@@ -21,7 +21,7 @@ function precio_en_cuotas () {
     }
     else if (cuota_producto == 12) {
         let porcentaje_en_doce_cuotas =(precio_total((precio_producto, cantidad_de_productos)*30)/100)
-        let precio_final = precio_total(precio_producto, cantidad_de_productos)
+        let precio_final = precio_total(precio_producto, cantidad_de_productos) + porcentaje_en_doce_cuotas
         return ("El precio final de " + producto + " en 12 cuotas es de $" + precio_final + " con 30% de recargo");
     }
 }
